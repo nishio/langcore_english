@@ -78,9 +78,37 @@ other values (expressions), the value e0f included, are etruef.
 
 ### Truthiness in Java
 
+As I mentioned above, Ifve decided to study different programming languages in
+order to understand how gtruthinessh is determined in each language. Ifd like to
+share with you what Ifve discovered during this process and, in particular, how Java
+treats the notion of truthiness. In Java, there is the idea of gtypeh, and there exists
+a gtypeh for Boolean values (i.e. gtrueh and gfalseh). For this reason, we are not
+allowed to put set 0 in a conditional because it is of type Integer and not a Boolean
+type value; doing so will result in a compilation error.
+
+Therefore, we can see that the value 0 can be treated as gtrueh, gfalseh, or even
+gneither true nor falseh , depending on the language used to evaluate the value[^fn2].
+
+[^fn2]: Letfs look at values other than numbers. In Python, not only is the value 0 is considered to be gfalseh
+    but a container with the size of 0 is also defined to be gfalseh. This means that an empty string and
+    an empty list are also gfalseh. In C, we use char* to deal with strings but it doesnft resolve to gfalseh
+    even when char* points to an empty string. It becomes gfalseh only when it points to nothing (i.e.
+    its value is NULL).
+
 ## 1.2 Learning about the History
 
 ### Understand the Intention of the Languagefs Designer
+
+Letfs say you are leaning about the specific feature of a programming language and
+not quite sure youfve actually understood the concept.
+
+I would argue that the reason you feel a bit uncertain about your understanding of the
+topic is because you are not clear on why that specific feature is needed in the first place.
+
+Programming languages are designed by humans, which means that there were
+problems that the languagefs designer wanted to solve with the new language.
+Understanding the context in which the language has been developed will help you
+understand the reason behind particular implementations of the language.
 
 ### What Programming Language to Learn? Nobody knows!
 
