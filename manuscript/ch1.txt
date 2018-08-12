@@ -1,10 +1,80 @@
 # Chapter 1 How to Learn a Language Efficiently
 
+Have you ever felt you understood a concept but not quite ggot ith while studying
+computer programming? If youfve had that feeling before, it was because the newly
+acquired knowledge was not associated with what youfd already experienced or knew.
+You also might have felt that there were simply so many things to learn that you cannot
+make a proper judgement on what needs to be learned. It would be great if we could
+recognize what we need to learn and what we can safely ignore.
+But how would that be possible?
+
 ## 1.1 Learning by comparison
+
+Suppose you are leaning a programming language gXh and wondering what you
+need to learn and what you donft. In this case, leaning about another programming
+language gYh can sometimes give you an insight on the question. That is, studying
+different languages allows you to recognize things that exist in common between
+these languages (gXh and gYh in this example) and also things that are unique to a
+particular language.
+
+Here, things that are common are the important topics that you need to learn and,
+once you master those topics, learning another programming language gZh becomes
+easier.
 
 ### Different Rules for Each Language
 
+Learning several languages will help you understand an important fact, which is
+that each language has different rules upon which it operates.
+You might see textbooks on computer programming explaining different
+programming rules, but that doesnft mean that those rules are universally
+adopted. Rather, it just means that, for the time being, those rules turn out to be
+convenient for these particular situations and they are used as the governing rules
+for that specific language, for the time being[^fn1]. In other words, these textbooks
+simply are simply describing some specific rules for some particular programming
+languages. 
+
+[^fn1]: The famous phraseu‚±‚¤‘‚¯‚½‚Ù‚¤‚ª©‘R‚¾‚©‚çA‚»‚¤‘‚¯‚é‚Æ‚¢‚¤–ñ‘©‚É‚µ‚æ‚¤ (–ñ‘©‚È‚ñ‚Ä‚¢
+    ‚Â‚Å‚à‚Å‚«‚é I )v (gThis reads naturally so letfs agree that this is a rule that has to be followed
+    (we can make a promise anytime!)) appears in the page 60 of w‰‚ß‚Ä‚Ìl‚Ì‚½‚ß‚ÌLISP[‘•â
+    ‰ü’ù”Å]xihLISP for Beginnersh, Ikuo Takeuchi, Shoeisha, 2010j .
+
 ### Truthiness in C and Ruby
+
+Letfs look at the notion of truthiness as an example. gTruthinessh here simply
+refers to a rule that decides what is gtrueh (gfalseh). If youfve learned C before, you
+may know that 0 resolves to gfalseh and anything other than 0 is gtrueh. Now, if C is
+the only programming language youfve ever learned, you might generalize this fact
+and think that a programing language in general considers 0 as gfalseh and other
+values as gtrueh. However, you might be surprised to learn that, in Ruby, 0 is
+regarded as gtrueh.
+
+
+{title="Displays 'false!' since 0 is false in C", lang=c}
+~~~~~~~
+#include <stdio.h>
+int main(){
+  if(0){
+    printf("true!\n");
+  }else{
+    printf("false!\n");
+  }
+}
+~~~~~~~
+
+{title="Displays 'true!' since 0 is true in Ruby", lang=ruby}
+~~~~~~~
+if 0 then
+  print "true!"
+else
+  print"false!"
+end
+~~~~~~~
+
+These gsurprisesh allow you to correct wrong assumptions you might have. In this
+example, your initial assumption that g0 is generally the only value that is efalsef and any
+other values are considered to be etruefh turns into one that says gC thinks 0 is efalsef
+and other values are etruef whereas, in Ruby, false and nil are regarded as efalsef and
+other values (expressions), the value e0f included, are etruef.
 
 ### Truthiness in Java
 
